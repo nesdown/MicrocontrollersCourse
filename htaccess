@@ -1,0 +1,63 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page26576547.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^cabinet$ page21435461.html [NC]
+RewriteRule ^cabinet/$ page21435461.html [NC]
+
+RewriteRule ^it94$ page21673191.html [NC]
+RewriteRule ^it94/$ page21673191.html [NC]
+
+RewriteRule ^manager$ page22460450.html [NC]
+RewriteRule ^manager/$ page22460450.html [NC]
+
+RewriteRule ^idea-form$ page22462291.html [NC]
+RewriteRule ^idea-form/$ page22462291.html [NC]
+
+RewriteRule ^ideas$ page22462392.html [NC]
+RewriteRule ^ideas/$ page22462392.html [NC]
+
+RewriteRule ^sign-up$ page22462622.html [NC]
+RewriteRule ^sign-up/$ page22462622.html [NC]
+
+RewriteRule ^techton$ page22994309.html [NC]
+RewriteRule ^techton/$ page22994309.html [NC]
+
+RewriteRule ^register$ page22998045.html [NC]
+RewriteRule ^register/$ page22998045.html [NC]
+
+RewriteRule ^hijackers$ page23008697.html [NC]
+RewriteRule ^hijackers/$ page23008697.html [NC]
+
+RewriteRule ^wealthminder_demo$ page23928654.html [NC]
+RewriteRule ^wealthminder_demo/$ page23928654.html [NC]
+
+RewriteRule ^hellletloose$ page23987090.html [NC]
+RewriteRule ^hellletloose/$ page23987090.html [NC]
+
+RewriteRule ^testform$ page24095552.html [NC]
+RewriteRule ^testform/$ page24095552.html [NC]
+
+RewriteRule ^cliqa$ page24204686.html [NC]
+RewriteRule ^cliqa/$ page24204686.html [NC]
+
+RewriteRule ^himery$ page26576547.html [NC]
+RewriteRule ^himery/$ page26576547.html [NC]
+
+RewriteRule ^test$ page27218976.html [NC]
+RewriteRule ^test/$ page27218976.html [NC]
+
+RewriteRule ^microprocessors$ page28259038.html [NC]
+RewriteRule ^microprocessors/$ page28259038.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3138-6362-4564-a466-323936646561/icons8-puzzle-50.ico [R=302,L]
+
